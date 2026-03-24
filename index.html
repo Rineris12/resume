@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praepun.Resume - Digital Marketer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Animations -->
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-50 via-white to-blue-50 text-gray-800 font-sans selection:bg-pink-200 selection:text-pink-900 pb-20">
+    
+    <!-- Navigation / Header -->
+    <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-pink-100 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500 text-xl">
+                Praepun.Resume
+            </div>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <a href="#about" class="hover:text-pink-500 transition-colors">ข้อมูลส่วนตัว</a>
+                <a href="#experience" class="hover:text-blue-500 transition-colors">ประสบการณ์</a>
+                <a href="#portfolio" class="hover:text-pink-500 transition-colors">ผลงาน</a>
+                <a href="#skills" class="hover:text-blue-500 transition-colors">ทักษะ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 space-y-20">
+        
+        <!-- 1. ข้อมูลส่วนตัว (Personal Information) -->
+        <section id="about" class="flex flex-col md:flex-row items-center gap-10 animate-fade-in-up">
+            <!-- เว้นรูปไว้ -->
+            <div class="relative group">
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-dashed border-pink-300 bg-white flex items-center justify-center overflow-hidden shadow-xl transition-transform group-hover:scale-105">
+                    <div class="text-center text-pink-300 flex flex-col items-center">
+                        <i data-lucide="image" width="48" height="48" class="mb-2 opacity-50"></i>
+                        <span class="text-sm font-medium">ใส่รูปภาพโปรไฟล์ที่นี่</span>
+                    </div>
+                </div>
+                <!-- Decorative elements -->
+                <div class="absolute -z-10 top-4 -right-4 w-48 h-48 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
+                <div class="absolute -z-10 -bottom-8 left-4 w-48 h-48 bg-pink-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-2000"></div>
+            </div>
+
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">
+                    แพรพรรณ <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">โพธิ์อำไพ</span>
+                </h1>
+                <p class="text-xl text-gray-600 font-medium mb-6">Digital Marketer & Content Creator</p>
+                
+                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                    <a href="tel:0923212996" class="flex items-center justify-center md:justify-start gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-pink-100 hover:border-pink-300 hover:shadow-md transition-all text-gray-600">
+                        <i data-lucide="phone" width="18" height="18" class="text-pink-500"></i>
+                        <span>092-321-2996</span>
+                    </a>
+                    <a href="mailto:praepun1133@gmail.com" class="flex items-center justify-center md:justify-start gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-blue-100 hover:border-blue-300 hover:shadow-md transition-all text-gray-600">
+                        <i data-lucide="mail" width="18" height="18" class="text-blue-500"></i>
+                        <span>praepun1133@gmail.com</span>
+                    </a>
+                </div>
+
+                <!-- About Me Section -->
+                <div class="mt-8 bg-white/80 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-pink-100 shadow-sm text-left relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-pink-100 to-blue-100 rounded-bl-full opacity-60"></div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        <i data-lucide="star" width="20" height="20" class="text-pink-500"></i> เกี่ยวกับฉัน (About Me)
+                    </h2>
+                    <div class="space-y-4 text-sm md:text-base text-gray-700 leading-relaxed">
+                        <p>
+                            สวัสดีค่ะ ชื่อ <strong>แพร (อายุ 22 ปี)</strong> เป็นคนมนุษยสัมพันธ์ดี เข้ากับผู้อื่นง่าย สนใจและคลุกคลีกับโซเชียลมีเดียเป็นอย่างมาก ทำให้คุ้นเคยกับพฤติกรรมผู้ใช้งานและเทรนด์ออนไลน์อยู่เสมอ กล้าลองสิ่งใหม่ๆ และเปิดรับการเรียนรู้ แม้บางครั้งจะมีความกังวลเกี่ยวกับกระแสตอบรับบนโซเชียล แต่ก็พยายามพัฒนาความมั่นใจของตัวเองอย่างต่อเนื่อง
+                        </p>
+                        <p>
+                            มีความสนใจในสายงาน <strong>Content Creation</strong> มากกว่างานวิเคราะห์เชิงลึก ชอบคิดไอเดียและสร้างสรรค์คอนเทนต์ ในช่วงระหว่างการศึกษาเคยมีประสบการณ์ทำด้านการตลาดและคอนเทนต์ แม้ผลงานอาจยังไม่โดดเด่นมาก แต่ทุกชิ้นงานตั้งใจทำและพยายามพัฒนาอยู่เสมอ
+                        </p>
+                        <p>
+                            ปัจจุบันกำลังฝึกฝนทักษะเพิ่มเติม เช่น การเขียนคอนเทนต์ การทำงานเป็นทีม และตั้งเป้าพัฒนาทักษะด้านการตัดต่อวิดีโอรวมถึงการนำเสนอหน้ากล้องให้ดีขึ้นในอนาคต นอกจากนี้ยังมีประสบการณ์ฝึกงานแบบ <strong>Work from Home</strong> ซึ่งทำให้ได้ฝึกความรับผิดชอบและการจัดการงานด้วยตนเองเป็นอย่างดี พร้อมและเต็มที่สำหรับการเรียนรู้ในสภาพแวดล้อมการทำงานจริงค่ะ
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. ประสบการณ์ทำงาน (Work Experience) & 4. การศึกษา (Education) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Work Experience -->
+            <section id="experience">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-3 bg-pink-100 rounded-lg text-pink-600">
+                        <i data-lucide="briefcase" width="24" height="24"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800">ประสบการณ์ทำงาน</h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- Exp 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-pink-400 hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i data-lucide="briefcase" width="64" height="64" class="text-pink-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Digital Marketing (ฝึกงาน)</h3>
+                        <p class="text-pink-600 font-medium mb-1">Self-d academy</p>
+                        <p class="text-sm text-gray-500 mb-4">18 ก.ย. 2568 - 4 ธ.ค. 2568</p>
+                        <ul class="text-gray-600 space-y-1 mb-4 text-sm list-disc list-inside">
+                            <li>เริ่มต้นศึกษา Pain point และดูหน้างานจริง</li>
+                            <li>ทำหน้าที่การตลาดและถ่ายคอนเทนต์</li>
+                        </ul>
+                        <a href="#work1" class="inline-flex items-center gap-1 text-sm font-semibold text-white bg-gradient-to-r from-pink-400 to-pink-500 px-4 py-2 rounded-full hover:scale-105 transition-transform shadow-sm">
+                            ดูผลงานที่นี่ <i data-lucide="chevron-right" width="16" height="16"></i>
+                        </a>
+                    </div>
+
+                    <!-- Exp 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-blue-400 hover:shadow-md transition-shadow relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i data-lucide="star" width="64" height="64" class="text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">เจ้าของร้าน (ธุรกิจส่วนตัว)</h3>
+                        <p class="text-blue-600 font-medium mb-1">ร้าน Rineris</p>
+                        <p class="text-sm text-gray-500 mb-4">ปัจจุบัน (ดำเนินงานมาแล้ว 9 เดือน)</p>
+                        <ul class="text-gray-600 space-y-1 mb-4 text-sm list-disc list-inside">
+                            <li>ขายแอปพลิเคชันดิจิทัลและ ai-editor</li>
+                            <li>ดูแลและบริหารจัดการทุกอย่างภายในร้านคนเดียว</li>
+                        </ul>
+                        <a href="#work3" class="inline-flex items-center gap-1 text-sm font-semibold text-white bg-gradient-to-r from-blue-400 to-blue-500 px-4 py-2 rounded-full hover:scale-105 transition-transform shadow-sm">
+                            ดูผลงานที่นี่ <i data-lucide="chevron-right" width="16" height="16"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education & Skills -->
+            <div class="space-y-10">
+                <section id="education">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="p-3 bg-blue-100 rounded-lg text-blue-600">
+                            <i data-lucide="graduation-cap" width="24" height="24"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-800">การศึกษา</h2>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-blue-100 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center shrink-0">
+                            <i data-lucide="graduation-cap" width="24" height="24" class="text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">มหาวิทยาลัยศรีปทุม</h3>
+                            <p class="text-blue-600 font-medium">คณะบริหารธุรกิจ / สาขาการตลาดดิจิทัล</p>
+                            <p class="text-gray-500 text-sm mt-1">ปีที่คาดว่าจะสำเร็จการศึกษา: 2569</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. ทักษะ (Skills) -->
+                <section id="skills">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="p-3 bg-purple-100 rounded-lg text-purple-600">
+                            <i data-lucide="star" width="24" height="24"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-800">ทักษะความสามารถ</h2>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-pink-50 space-y-6">
+                        <div>
+                            <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">Hard Skills</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-sm font-medium border border-pink-100">Content Marketing</span>
+                                <span class="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-sm font-medium border border-pink-100">Social Media Management (TikTok, IG, FB)</span>
+                                <span class="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-sm font-medium border border-pink-100">Pricing Strategy</span>
+                                <span class="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-sm font-medium border border-pink-100">Digital Product Sales</span>
+                                <span class="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-sm font-medium border border-pink-100">Video Content Creation</span>
+                                <span class="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-sm font-medium border border-pink-100">Marketing Campaign Planning</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">Soft Skills</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Problem Solving (Crisis Management)</span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Adaptability</span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Team Collaboration</span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Entrepreneurial Mindset</span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Creative Thinking</span>
+                                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Self-Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 2. Portfolio -->
+        <section id="portfolio" class="pt-10">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500 inline-block mb-3">
+                    ผลงาน (Portfolio)
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-300 to-blue-300 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-16">
+                
+                <!-- Work 1: Self-d academy -->
+                <div id="work1" class="bg-white rounded-3xl shadow-lg border border-pink-50 overflow-hidden scroll-mt-24">
+                    <div class="bg-gradient-to-r from-pink-100 to-pink-50 px-8 py-6 border-b border-pink-100">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Internship</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">ผลงานฝึกงาน - Self-d academy</h3>
+                        <p class="text-pink-600 mt-1">หน้าที่: การตลาดและจัดทำ Content</p>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="mb-8">
+                            <h4 class="font-bold text-lg text-gray-800 border-l-4 border-pink-400 pl-3 mb-4">งานมอบหมาย</h4>
+                            <p class="text-gray-600 mb-4 bg-pink-50 p-4 rounded-xl">คิดคอนเทนต์ 1-2 คอนเทนต์ เพื่อนำไปถ่ายทำในวันที่มีการออกค่าย</p>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                                <!-- Placeholder for IG Reels/Posts -->
+                                <a href="https://www.instagram.com/reel/DQtO8n6k2A4/" target="_blank" rel="noreferrer" class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-pink-300 hover:bg-pink-50 transition-all group">
+                                    <i data-lucide="play-square" width="32" height="32" class="text-pink-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                                    <span class="font-medium text-sm">IG Reel (คลิกดูผลงาน)</span>
+                                </a>
+                                <a href="https://www.instagram.com/p/DQ_Uy9JkzUd/" target="_blank" rel="noreferrer" class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-pink-300 hover:bg-pink-50 transition-all group">
+                                    <i data-lucide="image" width="32" height="32" class="text-pink-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                                    <span class="font-medium text-sm">IG Post 1 (คลิกดูผลงาน)</span>
+                                </a>
+                                <a href="https://www.instagram.com/p/DRlm-T_E_D1/" target="_blank" rel="noreferrer" class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-pink-300 hover:bg-pink-50 transition-all group">
+                                    <i data-lucide="image" width="32" height="32" class="text-pink-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                                    <span class="font-medium text-sm">IG Post 2 (คลิกดูผลงาน)</span>
+                                </a>
+                            </div>
+
+                            <!-- Video & Image Placeholders -->
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="aspect-video bg-gray-100 rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 text-gray-500 flex-col relative overflow-hidden">
+                                    <i data-lucide="image" class="mb-2 opacity-50"></i>
+                                    <span class="text-sm">ใส่รูป คลิปแปะกระดาษ.png</span>
+                                </div>
+                                <div class="aspect-video bg-gray-100 rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 text-gray-500 flex-col">
+                                    <i data-lucide="play-square" class="mb-2 opacity-50"></i>
+                                    <span class="text-sm">ใส่วิดีโอ clip1.mov</span>
+                                </div>
+                                <div class="aspect-video bg-gray-100 rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300 text-gray-500 flex-col">
+                                    <i data-lucide="play-square" class="mb-2 opacity-50"></i>
+                                    <span class="text-sm">ใส่วิดีโอ clip2.mov</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800 border-l-4 border-pink-400 pl-3 mb-4">งานการตลาด (Marketing Tasks)</h4>
+                            
+                            <div class="space-y-6">
+                                <!-- Painpoint Slides -->
+                                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                    <h5 class="font-semibold text-gray-700 mb-3 flex items-center gap-2"><i data-lucide="image" width="16" height="16"></i> Painpoint (รูปสไลด์ a1.png - a10.png)</h5>
+                                    <div class="flex gap-3 overflow-x-auto pb-4 snap-x">
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a1.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a2.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a3.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a4.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a5.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a6.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a7.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a8.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a9.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">a10.png</div>
+                                    </div>
+                                </div>
+
+                                <!-- Discovery Slides -->
+                                <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                    <h5 class="font-semibold text-gray-700 mb-3 flex items-center gap-2"><i data-lucide="image" width="16" height="16"></i> Discovery (b1.png - b10.png)</h5>
+                                    <div class="flex gap-3 overflow-x-auto pb-4 snap-x">
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b1.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b2.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b3.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b4.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b5.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b6.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b7.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b8.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b9.png</div>
+                                        <div class="snap-center shrink-0 w-32 h-24 bg-white rounded-lg flex items-center justify-center border border-gray-200 shadow-sm text-xs text-gray-400">b10.png</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work 2: University Project -->
+                <div class="bg-white rounded-3xl shadow-lg border border-blue-50 overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-100 to-blue-50 px-8 py-6 border-b border-blue-100">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">University Project</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">อารีรังบังแซ่บ (โปรเจกต์ขายของปี 2)</h3>
+                        <p class="text-blue-600 mt-1">หน้าที่: การตลาดและคิดคอนเทนต์ (ทำงานร่วมกับทีม 3 คน)</p>
+                    </div>
+
+                    <div class="p-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 border-l-4 border-blue-400 pl-3 mb-4">ที่มาของชื่อ</h4>
+                                <p class="text-gray-600 mb-6 bg-blue-50 p-4 rounded-xl text-sm leading-relaxed">
+                                    <strong>อารีรัง</strong> = คนในกลุ่มชอบ Bts <br/>
+                                    <strong>บัง</strong> = บังทัน <br/>
+                                    <strong>แซ่บ</strong> = ยำ
+                                </p>
+
+                                <h4 class="font-bold text-lg text-gray-800 border-l-4 border-blue-400 pl-3 mb-4">กลยุทธ์และการแก้ปัญหา</h4>
+                                <div class="space-y-4 text-sm text-gray-700">
+                                    <p class="flex gap-2"><span class="text-blue-500 mt-1">✦</span> <span><strong>การตั้งราคา:</strong> ทีมเสนอ 39 บาท ดิฉันเสนอปรับเป็น 49 บาท (ราคาปกติ) และ 59 บาทสำหรับโปรแชร์สตอรี่ลด 10 บาท เพื่อเพิ่มกำไรกรณีลูกค้าไม่แชร์ สุดท้ายตกลงกันที่ราคา 49 บาท (แชร์สตอรี่ลด 5 บาท) หากมา 11 คนแลกรับมะยงชิดฟรี</span></p>
+                                    <p class="flex gap-2"><span class="text-blue-500 mt-1">✦</span> <span><strong>การแก้ปัญหาระหว่างวัน:</strong> เมื่อยอดขายช่วงแรกไม่ดี จึงปรับกลยุทธ์จัดโปรโมชั่น <em>"ซื้อยำดูดวงฟรี"</em> กระทันหัน</span></p>
+                                    <p class="flex gap-2"><span class="text-blue-500 mt-1">✦</span> <span><strong>ผลลัพธ์:</strong> รับหน้าที่อัปเดตคอนเทนต์ลงกลุ่ม Facebook มหาวิทยาลัยและ TikTok ทำให้โปรเจกต์ประสบความสำเร็จ ไม่ขาดทุน และได้กำไรเฉลี่ยคนละ 40 บาท</span></p>
+                                </div>
+
+                                <div class="mt-6 flex flex-wrap gap-3">
+                                    <a href="https://www.tiktok.com/@arirang.fruit_salad" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-800 transition-colors">
+                                        <i data-lucide="play-square" width="16" height="16"></i> TikTok
+                                    </a>
+                                    <a href="https://www.instagram.com/arirang.2402/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity">
+                                        <i data-lucide="image" width="16" height="16"></i> Instagram
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div class="aspect-[4/3] bg-gray-100 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed border-gray-300 relative overflow-hidden group">
+                                    <i data-lucide="play-square" width="40" height="40" class="text-gray-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                                    <span class="text-sm text-gray-500 font-medium px-4 text-center">วิดีโอ (ปิดส่วนตัวเพื่อเซฟหน้าคนในคลิป)<br/>v1c044g50000d6c07qfog65jq95u31vg.mp4</span>
+                                </div>
+                                <div class="aspect-[4/3] bg-gray-100 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed border-gray-300 relative overflow-hidden group">
+                                    <i data-lucide="image" width="40" height="40" class="text-gray-400 mb-2 group-hover:scale-110 transition-transform"></i>
+                                    <span class="text-sm text-gray-500 font-medium">รูปภาพ<br/>643900209...n.jpg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work 3: Personal Business -->
+                <div id="work3" class="bg-white rounded-3xl shadow-lg border border-purple-50 overflow-hidden scroll-mt-24">
+                    <div class="bg-gradient-to-r from-purple-100 to-pink-50 px-8 py-6 border-b border-purple-100">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Personal Business</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">ร้าน Rineris (ธุรกิจส่วนตัว)</h3>
+                        <p class="text-purple-600 mt-1">เริ่มต้นจากโปรเจกต์มหาลัย สู่รายได้เสริม (ทำมาแล้ว 9 เดือน)</p>
+                    </div>
+
+                    <div class="p-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 border-l-4 border-purple-400 pl-3 mb-4">จุดเริ่มต้นและการเติบโต</h4>
+                                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                    เริ่มต้นจากโปรเจกต์งานมหาลัยที่โจทย์คือ "ขายอะไรก็ได้ให้ได้ยอด 4,000 บาท" ซึ่งสามารถทำสำเร็จ และต่อยอดทำมาเป็นอาชีพเสริมจนถึงปัจจุบัน (9 เดือน) โดยขายแอปพลิเคชันดิจิทัล (ai-editor) และดูแลทุกอย่างในร้านด้วยตนเอง
+                                </p>
+                                <p class="text-gray-600 mb-6 text-sm leading-relaxed bg-purple-50 p-4 rounded-xl border border-purple-100">
+                                    <strong>จุดเปลี่ยนชีวิต:</strong> ในช่วง 2-3 เดือนที่ผ่านมาไม่มีลูกค้าเนื่องจาก Facebook ถูกปิด จึงลองหันมาทำบัญชี TikTok แบบไม่ได้ตั้งใจคิดอะไรมาก แต่กลับกลายเป็นจุดเปลี่ยนที่ทำให้ธุรกิจไปต่อได้
+                                </p>
+                                
+                                <div class="flex flex-col gap-3">
+                                    <a href="https://rineris.xdvz.xyz/home" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 bg-purple-600 text-white px-5 py-3 rounded-xl font-medium hover:bg-purple-700 transition-colors shadow-sm">
+                                        <i data-lucide="external-link" width="18" height="18"></i> เยี่ยมชมหน้าร้านเว็บ Rineris
+                                    </a>
+                                    <div class="flex gap-3">
+                                        <a href="https://www.tiktok.com/@rineris_/video/7527817590056439047" target="_blank" rel="noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-black text-white px-4 py-2 rounded-xl text-sm hover:bg-gray-800 transition-colors">
+                                            TikTok (ร้าน)
+                                        </a>
+                                        <a href="https://www.tiktok.com/@ririne_nn" target="_blank" rel="noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-black text-white px-4 py-2 rounded-xl text-sm hover:bg-gray-800 transition-colors">
+                                            TikTok (สำรอง)
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div class="aspect-[9/16] max-w-sm mx-auto bg-gray-100 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed border-gray-300 relative overflow-hidden shadow-inner">
+                                    <i data-lucide="play-square" width="48" height="48" class="text-gray-400 mb-2"></i>
+                                    <span class="text-sm text-gray-500 font-medium text-center px-4">คลิปแรกในการเริ่มทำคอนเทนต์<br/>v10044g50000...udjog.mp4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University Drive Link -->
+                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-3xl border border-gray-200 text-center flex flex-col items-center justify-center space-y-4 hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm">
+                        <i data-lucide="briefcase" width="32" height="32" class="text-gray-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">ผลงานโปรเจกต์มหาลัยอื่นๆ</h3>
+                        <p class="text-gray-600 text-sm max-w-md mx-auto mb-4">ส่วนมากจะเป็นผลงานที่รับหน้าที่คิดคอนเทนต์ ตั้งแต่ช่วงปี 2 สามารถดูผลงานทั้งหมดได้ที่ Google Drive</p>
+                        <a href="https://drive.google.com/drive/folders/1eFblg37LM_9gcQ2IalcOv7Lscsqjt7rI?usp=sharing" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 bg-white text-gray-800 font-semibold px-6 py-3 rounded-full border border-gray-300 hover:border-blue-400 hover:text-blue-600 transition-colors shadow-sm">
+                            <i data-lucide="external-link" width="18" height="18"></i> เปิดดูแฟ้มผลงานรวม (Google Drive)
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-20 py-8 text-center text-gray-500 text-sm border-t border-pink-100">
+        <p>© 2026 Praepun Phoampai - Resume & Portfolio</p>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

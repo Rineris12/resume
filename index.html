@@ -271,19 +271,21 @@
                                 <div class="aspect-[9/16] bg-black rounded-xl overflow-hidden shadow-md border border-gray-200 flex items-center justify-center">
                                     <img src="คลิปแปะกระดาษ.png" alt="คลิปแปะกระดาษ" class="w-full h-full object-contain">
                                 </div>
-                                <div class="aspect-[9/16] bg-black rounded-xl overflow-hidden shadow-md border border-gray-200 flex items-center justify-center">
-                                    <video controls playsinline class="w-full h-full object-contain">
-                                        <source src="clip1.mov" type="video/quicktime">
-                                        <source src="clip1.mp4" type="video/mp4">
-                                        เบราว์เซอร์ของคุณไม่รองรับการแสดงผลวิดีโอ
+                                <div class="aspect-[9/16] bg-black rounded-xl overflow-hidden shadow-md border border-gray-200 flex items-center justify-center relative">
+                                    <video controls playsinline preload="metadata" class="w-full h-full object-contain z-10">
+                                        <!-- โค้ดถูกปรับให้พยายามหาไฟล์ .mp4 ก่อนเพื่อให้อ่านภาพได้ชัวร์สุด -->
+                                        <source src="0325(2).mp4" type="video/mp4">
+                                        <source src="0325(2).mov" type="video/quicktime">
                                     </video>
+                                    <p class="absolute text-gray-400 text-xs p-4 text-center z-0">หากจอดำหรือเล่นไม่ได้<br>กรุณาแปลงไฟล์เป็น .mp4 ครับ</p>
                                 </div>
-                                <div class="aspect-[9/16] bg-black rounded-xl overflow-hidden shadow-md border border-gray-200 flex items-center justify-center">
-                                    <video controls playsinline class="w-full h-full object-contain">
-                                        <source src="clip2.mov" type="video/quicktime">
-                                        <source src="clip2.mp4" type="video/mp4">
-                                        เบราว์เซอร์ของคุณไม่รองรับการแสดงผลวิดีโอ
+                                <div class="aspect-[9/16] bg-black rounded-xl overflow-hidden shadow-md border border-gray-200 flex items-center justify-center relative">
+                                    <video controls playsinline preload="metadata" class="w-full h-full object-contain z-10">
+                                        <!-- โค้ดถูกปรับให้พยายามหาไฟล์ .mp4 ก่อนเพื่อให้อ่านภาพได้ชัวร์สุด -->
+                                        <source src="0325(3).mp4" type="video/mp4">
+                                        <source src="0325(3).mov" type="video/quicktime">
                                     </video>
+                                    <p class="absolute text-gray-400 text-xs p-4 text-center z-0">หากจอดำหรือเล่นไม่ได้<br>กรุณาแปลงไฟล์เป็น .mp4 ครับ</p>
                                 </div>
                             </div>
                         </div>
@@ -292,41 +294,43 @@
                             <h4 class="font-bold text-lg text-gray-800 border-l-4 border-pink-400 pl-3 mb-4 mt-12">งานการตลาด (Marketing Tasks)</h4>
                             
                             <div class="space-y-8">
-                                <!-- Marketing Strategy Slides -->
-                                <div class="bg-blue-50/50 p-5 rounded-xl border border-blue-100">
-                                    <h5 class="font-semibold text-blue-800 mb-4 flex items-center gap-2 text-lg">
-                                        <i data-lucide="presentation" width="20" height="20"></i> สไลด์วิเคราะห์การตลาดและคู่แข่ง (Marketing Strategy)
+                                <!-- Pain Point Slides (a1-a13) -->
+                                <div class="bg-orange-50/50 p-5 rounded-xl border border-orange-100">
+                                    <h5 class="font-semibold text-orange-800 mb-4 flex items-center gap-2 text-lg">
+                                        <i data-lucide="presentation" width="20" height="20"></i> สไลด์ Pain Point
                                     </h5>
                                     <div class="flex gap-4 overflow-x-auto pb-4 snap-x hide-scrollbar">
-                                        <img src="strategy/1.png" alt="Marketing Funnel" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="strategy/2.png" alt="Trend 2025" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="strategy/3.png" alt="Competitor 1" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="strategy/4.png" alt="Competitor 2" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="strategy/5.png" alt="Competitor 3" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="strategy/7.png" alt="Applied Campaign 1" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="strategy/8.png" alt="Applied Campaign 2" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="strategy/9.png" alt="SWOT Analysis" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="strategy/10.png" alt="D-Camp Advantages" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <!-- ใช้ชื่อไฟล์ตามรูปภาพที่แคปมาให้ -->
+                                        <img src="a1.png" alt="Pain Point 1" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="a3.png" alt="Pain Point 3" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="a4.png" alt="Pain Point 4" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="a5.png" alt="Pain Point 5" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="a6.png" alt="Pain Point 6" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="a7.png" alt="Pain Point 7" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="a8.png" alt="Pain Point 8" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="a9.png" alt="Pain Point 9" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="a10.png" alt="Pain Point 10" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="a13.png" alt="Pain Point 13" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
                                     </div>
                                     <p class="text-xs text-gray-500 mt-2 text-center">เลื่อนซ้าย-ขวา เพื่อดูสไลด์</p>
                                 </div>
 
-                                <!-- Pain Point Slides -->
-                                <div class="bg-orange-50/50 p-5 rounded-xl border border-orange-100">
-                                    <h5 class="font-semibold text-orange-800 mb-4 flex items-center gap-2 text-lg">
-                                        <i data-lucide="presentation" width="20" height="20"></i> สไลด์ Pain Point & Ideation
+                                <!-- Discovery Slides (b1-b10) -->
+                                <div class="bg-blue-50/50 p-5 rounded-xl border border-blue-100">
+                                    <h5 class="font-semibold text-blue-800 mb-4 flex items-center gap-2 text-lg">
+                                        <i data-lucide="presentation" width="20" height="20"></i> สไลด์ Discovery
                                     </h5>
                                     <div class="flex gap-4 overflow-x-auto pb-4 snap-x hide-scrollbar">
-                                        <img src="painpoint/1.png" alt="Pain Point 1" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="painpoint/3.png" alt="Pain Point 3" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="painpoint/4.png" alt="Pain Point 4" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="painpoint/5.png" alt="Pain Point 5" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="painpoint/6.png" alt="Pain Point 6" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="painpoint/7.png" alt="Pain Point 7" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="painpoint/8.png" alt="Pain Point 8" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="painpoint/9.png" alt="Pain Point 9" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="painpoint/10.png" alt="Pain Point 10" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
-                                        <img src="painpoint/13.png" alt="Pain Point 13" class="snap-center shrink-0 w-72 aspect-video object-cover rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <!-- ใช้ชื่อไฟล์ตามรูปภาพที่แคปมาให้ -->
+                                        <img src="b1.png" alt="Discovery 1" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="b2.png" alt="Discovery 2" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="b3.png" alt="Discovery 3" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="b4.png" alt="Discovery 4" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="b5.png" alt="Discovery 5" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="b7.png" alt="Discovery 7" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="b8.png" alt="Discovery 8" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="b9.png" alt="Discovery 9" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
+                                        <img src="b10.png" alt="Discovery 10" class="snap-center shrink-0 w-72 aspect-video object-contain rounded-lg border border-gray-200 shadow-sm bg-white hover:scale-105 transition-transform">
                                     </div>
                                     <p class="text-xs text-gray-500 mt-2 text-center">เลื่อนซ้าย-ขวา เพื่อดูสไลด์</p>
                                 </div>
@@ -376,11 +380,13 @@
                             <div class="space-y-6">
                                 <!-- เปลี่ยนเป็นแนวตั้ง 9:16 และปรับให้อยู่ตรงกลาง -->
                                 <div class="aspect-[9/16] max-w-[280px] mx-auto bg-black rounded-2xl overflow-hidden shadow-md border border-gray-200 flex items-center justify-center relative">
-                                    <span class="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">วิดีโอ (ส่วนตัว)</span>
-                                    <video controls playsinline preload="metadata" class="w-full h-full object-contain">
-                                        <source src="v1c044g50000d6c07qfog65jq95u31vg.mp4" type="video/mp4">
-                                        เบราว์เซอร์ของคุณไม่รองรับการแสดงผลวิดีโอ
+                                    <span class="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded z-20">วิดีโอ (ส่วนตัว)</span>
+                                    <video controls playsinline preload="metadata" class="w-full h-full object-contain z-10">
+                                        <!-- อัปเดตชื่อไฟล์ตามที่ผู้ใช้แจ้ง -->
+                                        <source src="0325(1).mp4" type="video/mp4">
+                                        <source src="0325(1).mov" type="video/quicktime">
                                     </video>
+                                    <p class="absolute text-gray-400 text-xs p-4 text-center z-0">หากจอดำหรือเล่นไม่ได้<br>กรุณาแปลงไฟล์เป็น .mp4 ครับ</p>
                                 </div>
                                 
                                 <!-- รูปภาพประกอบ จัดให้มีความสูงสอดคล้องกัน -->
@@ -431,11 +437,13 @@
                             <div class="space-y-4">
                                 <!-- เปลี่ยนเป็นแนวตั้ง 9:16 -->
                                 <div class="aspect-[9/16] max-w-[280px] mx-auto bg-black rounded-2xl overflow-hidden shadow-lg border border-gray-200 flex items-center justify-center relative">
-                                    <span class="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">คลิปแรก</span>
-                                    <video controls playsinline preload="metadata" class="w-full h-full object-contain">
-                                        <source src="v10044g50000d1s2rnfog65kvivudjog.mp4" type="video/mp4">
-                                        เบราว์เซอร์ของคุณไม่รองรับการแสดงผลวิดีโอ
+                                    <span class="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded z-20">คลิปแรก</span>
+                                    <video controls playsinline preload="metadata" class="w-full h-full object-contain z-10">
+                                        <!-- อัปเดตชื่อไฟล์ตามที่ผู้ใช้แจ้ง -->
+                                        <source src="0325(1).mp4" type="video/mp4">
+                                        <source src="0325(1).mov" type="video/quicktime">
                                     </video>
+                                    <p class="absolute text-gray-400 text-xs p-4 text-center z-0">หากจอดำหรือเล่นไม่ได้<br>กรุณาแปลงไฟล์เป็น .mp4 ครับ</p>
                                 </div>
                             </div>
                         </div>
